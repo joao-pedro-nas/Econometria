@@ -15,3 +15,5 @@ print(econometria.ajustar_ols('wage ~ educ + exper', data=df).summary())
 
 # Significância estatística do coeficiente 'educ' dentro da regressão.
 econometria.resumo_completo('wage ~ educ', data=df, coef_nome='educ', alpha=0.05, alternative='two-sided')
+
+# Caso queira fazer o teste de hipótese de modo unilateral, use alternative='greater' ou alternative='less'.
